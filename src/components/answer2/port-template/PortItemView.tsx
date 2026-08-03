@@ -53,7 +53,6 @@ export const PortItemView: React.FC<PortItemViewProps> = (props) => {
       <span className={"vertical-line" + (isLastItem ? ' vl-last-item' : '') + (isFirstItem ? ' vl-first-item' : '') + (isRootNode ? ' vl-is-root' : '')} ></span>
       <span className="horizontal-line" ></span>
 
-
       <div className='port-item-controls'>
         <input type="text" value={item.label} onFocus={handleFocusIn} onChange={handleChange} />
         {
@@ -79,7 +78,6 @@ export const PortItemView: React.FC<PortItemViewProps> = (props) => {
           )
         }
       </div>
-
 
       {items.length ? (
         <>
