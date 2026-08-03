@@ -1,0 +1,13 @@
+
+.port-template-view {
+  display: block;
+  width: 800px;
+}
+
+.tree-view {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  padding: 20px;
+  gap: 16px;
+}

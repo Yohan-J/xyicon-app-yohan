@@ -1,0 +1,77 @@
+.port-item-view {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.port-item-view input {
+  width: 30%;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.port-item-controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.port-item-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.port-item-children {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-left: 20px;
+  margin-right: 0px;
+  padding-right: 0px;
+  gap: 16px;
+}
+
+.horizontal-line {
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 1px;
+  border-top: 1px dashed black;
+  top: 20px;
+  left: 0px;
+}
+
+.vertical-line {
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 54px;
+  border-left: 1px dashed black;
+  top: -8px;
+  left: 0px;
+}
+.vertical-line.vl-first-item {
+  top: -16px;
+  height: 62px;
+}
+.vertical-line.vl-last-item {
+  height: 27px;
+}
+.vertical-line.vl-first-item.vl-last-item {
+  height: 35px;
+}
+.vertical-line.vl-first-item.vl-is-root {
+  top: 20px;
+  height: 26px;
+}
+
+.vertical-line-filler {
+  position: absolute;
+  display: block;
+  width: 1px;
+  border-left: 1px dashed black;
+  top: 48px;
+  bottom: -5px;
+  left: 0px;
+}

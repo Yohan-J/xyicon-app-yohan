@@ -1,0 +1,32 @@
+.polygon-visualizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.polygon-canvas {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  max-width: 100%;
+}
+
+.polygon-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.polygon-hint {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+}
+
+.polygon-status {
+  margin: 0;
+  color: #b45309;
+  font-size: 13px;
+  font-weight: 500;
+}
