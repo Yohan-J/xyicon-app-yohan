@@ -1,11 +1,9 @@
 import { PortItem } from "../types/port-template";
 
-// Temp solution to generate ID
-let nextId = 0;
-
-
 export class PortItemModel {
-  id: number = ++nextId;
+  // Temp solution to generate unique ID
+  id: number = Date.now();
+
   // id: string;
   level: number = 0;
   label: string = '';
