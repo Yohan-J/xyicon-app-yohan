@@ -25,7 +25,7 @@ export const PortItemView: React.FC<PortItemViewProps> = (props) => {
 
   const items = item.items;
 
-  const {focusedPortModel} = useEditPortModel();
+  const { focusedPortModel } = useEditPortModel();
   const isEditMode = focusedPortModel?.id === item.id;
 
   const handleAdd = () => {
@@ -55,14 +55,28 @@ export const PortItemView: React.FC<PortItemViewProps> = (props) => {
 
 
       <div className='port-item-controls'>
-        <input type="text" value={item.label} onFocus={handleFocusIn} onChange={handleChange}/>
+        <input type="text" value={item.label} onFocus={handleFocusIn} onChange={handleChange} />
         {
-          isEditMode ? (
-            <div className='port-item-buttons'>
-              <button type="button" onClick={handleDelete}>Delete</button>
-              <button type="button" onClick={handleAdd}>Add</button>
+          isEditMode && (
+            <div className="port-item-buttons">
+              <button
+                className="port-delete"
+                type="button"
+                onClick={handleDelete}
+              >
+                Delete
+              </button>
+
+              <button
+                className="port-add"
+                type="button"
+                onClick={handleAdd}
+                aria-label="Add"
+              >
+                <span className="plus"></span>
+              </button>
             </div>
-          ) : null
+          )
         }
       </div>
 

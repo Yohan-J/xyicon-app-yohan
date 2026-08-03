@@ -61,16 +61,29 @@ const PortTemplateContent: React.FC = () => {
 
   return (
     <div className="port-template-view">
-      <button type="button" onClick={handleAdd}>Add</button>
-      <button type="button" onClick={handleSave}>Save</button>
-      <button type="button" onClick={handleLoadClick}>Load</button>
-      <input
-        ref={fileInputRef}
-        type="file"
-        accept="application/json,.json"
-        style={{ display: 'none' }}
-        onChange={handleFileChange}
-      />
+      <div className="port-item-controls">
+        <button
+          className="port-add"
+          type="button"
+          onClick={handleAdd}
+          aria-label="Add"
+        >
+          <span className="plus"></span>
+        </button>
+        <button className="port-save" type="button" onClick={handleSave}>
+          Save
+        </button>
+        <button className="port-load" type="button" onClick={handleLoadClick}>
+          Load
+        </button>
+        <input
+          ref={fileInputRef}
+          type="file"
+          accept="application/json,.json"
+          style={{ display: 'none' }}
+          onChange={handleFileChange}
+        />
+      </div>
 
       <div className="tree-view">
         {

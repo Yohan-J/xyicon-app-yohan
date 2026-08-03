@@ -1,7 +1,11 @@
-
 .port-template-view {
   display: block;
   width: 800px;
+}
+
+.port-template-view .port-item-controls {
+  display: flex;
+  align-items: center;
 }
 
 .tree-view {
@@ -10,4 +14,8 @@
   background-color: #eee;
   padding: 20px;
   gap: 16px;
+}
+
+.port-save {
+  margin-left: auto;
 }
